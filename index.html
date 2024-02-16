@@ -3,43 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crie suas mensagens sem que ninguém descubra">
     <link rel="stylesheet" href="style.css">
     <title>Decodificador de texto</title>
 </head>
 <body>
-    <header> 
+    <header class="cabecalho"> 
         <a href="https://www.alura.com.br/">
-            <img src="assets/Frame 6.png" alt="alura" class="imagem-canto-esquerdo">
+            <img class="cabecalho-imagem" src="assets/Frame 6.png" alt="logo da alura">
         </a>       
-        <h1>Decodifique-se</h1>
-        <p>Crie suas mensagens sem que ninguém descubra.</p>          
+        <h1 class="cabecalho-titulo">Decodifique-se</h1>         
             
     </header>
 
-    <main>
-       <div class="container">
-        <div class="container__conteudo">
-            <div class="container__informacoes">
-                <div class="container__texto">
-                    <form>
-                        <textarea id="texto" placeholder="Digite seu texto aqui" class="container__textarea"></textarea>
-                        <textarea id="texto" placeholder="Nenhuma mensagem encontrada. Digite uma mensagem que deseja criptografar ou descriptografar." class="container__textarea"></textarea>
-                    </form>
-                    <p>! Apenas letras minúsculas e sem acentos.</p>
-                </div>
-                <div class="container__botoes">
-                    <button onclick="criptografarTexto()" class="container__botao">Criptografar</button>
-                    <button onclick="descriptografarTexto()" class="container__botao">Descriptografar</button>
-
-
-                </div>
-                
-            </div>
-        </div>
-       </div>
-        
+    <main class="conteudo">
+       <section class="conteudo-principal">
+            <form class="conteudo-texto">
+                <textarea id="texto" placeholder="Digite seu texto aqui" class="container__textarea"></textarea>
+                <textarea id="texto" placeholder="Nenhuma mensagem encontrada. Digite uma mensagem que deseja criptografar ou descriptografar." class="conteudo__textarea"></textarea>
+            </form>
+            <p>! Apenas letras minúsculas e sem acentos.</p>
+       </section>
+       <section class="conteudo-botoes">
+            <button onclick="criptografarTexto()" class="conteudo-botoes">Criptografar</button>
+            <button onclick="descriptografarTexto()" class="conteudo-botoes">Descriptografar</button>
+       </section>
     </main>
-    <footer>
+    <footer class="rodape">
         <p>Desenvolvido por Elaine Dias Carvalho, aluna do programa ONE/Alura</p>
         <a href="https://github.com/Elainedc">
             <button>Github</button>
