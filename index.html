@@ -10,7 +10,10 @@
     <header>        
             <h1>Chat decodificador</h1>
             <p>Crie suas mensagens sem que ninguém descubra.</p>
-            <img src="assets/Frame 6.png" alt="alura" class="imagem-canto-esquerdo">
+            <a href="https://www.alura.com.br/">
+                <img src="assets/Frame 6.png" alt="alura" class="imagem-canto-esquerdo">
+            </a>
+            
     </header>
 
     <main>
@@ -18,19 +21,32 @@
         <div class="container__conteudo">
             <div class="container__informacoes">
                 <div class="container__texto">
+                    <form>
+                        <textarea id="texto" placeholder="Digite seu texto aqui" class="container__textarea"></textarea>
+                        <textarea id="texto" placeholder="Nenhuma mensagem encontrada. Digite uma mensagem que deseja criptografar ou descriptografar." class="container__textarea"></textarea>
+                    </form>
                     <p>! Apenas letras minúsculas e sem acentos.</p>
                 </div>
-                <form>
-                    <textarea id="texto" placeholder="Digite seu texto aqui" classe="container__textarea"></textarea>
-                    <textarea id="texto" placeholder="Nenhuma mensagem encontrada. Digite uma mensagem que deseja criptografar ou descriptografar." classe="container__textarea"></textarea>
-                </form>
+                <div class="container__botoes">
+                    <button onclick="criptografarTexto()" class="container__botao">Criptografar</button>
+                    <button onclick="descriptografarTexto()" class="container__botao">Descriptografar</button>
+
+
+                </div>
+                
             </div>
         </div>
        </div>
         
     </main>
     <footer><p>Desenvolvido por Elaine Dias Carvalho, aluna do programa ONE/Alura</p>
-        <button>Github</button> <button>LinkedIn</button>
+        <a href="https://github.com/Elainedc">
+            <button>Github</button>
+        </a>
+        <a href="https://www.linkedin.com/in/elainedc/">
+            <button>LinkedIn</button>
+        </a>
+         
     </footer>
 
 
