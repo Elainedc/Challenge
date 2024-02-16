@@ -35,3 +35,41 @@ body {
     color: darkblue;
 }
 
+
+.conteudo {
+    margin-bottom: 40px;
+    border-top: 0.5 solid;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-texto {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #D8DFE8;
+}
+
+.conteudo-textarea-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-botoes  {
+    display: flex;
+    flex-direction: column;
+    background-color: #D8DFE8;
+    width: 680px;
+    height: 100px;
+    border: none;
+}

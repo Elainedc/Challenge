@@ -12,21 +12,24 @@
         <a href="https://www.alura.com.br/">
             <img class="cabecalho-imagem" src="assets/Frame 6.png" alt="logo da alura">
         </a>       
-        <h1 class="cabecalho-titulo">Decodifique-se</h1>         
-            
+        <h1 class="cabecalho-titulo">Decodifique-se</h1>
+        
     </header>
 
     <main class="conteudo">
        <section class="conteudo-principal">
             <form class="conteudo-texto">
-                <textarea id="texto" placeholder="Digite seu texto aqui" class="container__textarea"></textarea>
-                <textarea id="texto" placeholder="Nenhuma mensagem encontrada. Digite uma mensagem que deseja criptografar ou descriptografar." class="conteudo__textarea"></textarea>
+                <textarea class="conteudo-textarea-1" rows="20" cols="150" id="texto" placeholder="Digite seu texto aqui" class="container__textarea"></textarea>
+                <textarea class="conteudo-textarea-2" rows="20" cols="50" id="texto" placeholder="Nenhuma mensagem encontrada. Digite uma mensagem que deseja criptografar ou descriptografar." class="conteudo__textarea"></textarea>
             </form>
-            <p>! Apenas letras minúsculas e sem acentos.</p>
        </section>
+       <div>
+            <p>! Apenas letras minúsculas e sem acentos.</p>  
+       </div> 
+            
        <section class="conteudo-botoes">
-            <button onclick="criptografarTexto()" class="conteudo-botoes">Criptografar</button>
-            <button onclick="descriptografarTexto()" class="conteudo-botoes">Descriptografar</button>
+            <button onclick="criptografarTexto()" class="conteudo-botoes-1">Criptografar</button>
+            <button onclick="descriptografarTexto()" class="conteudo-botoes-2">Descriptografar</button>
        </section>
     </main>
     <footer class="rodape">
