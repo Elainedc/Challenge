@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -10,66 +9,63 @@
 
 body {
     font-size: 100%;
-    background: #D8DFE8;
+    background: #98ABEE;
 }
 
 .cabecalho {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
     padding: 20px;
 }
 
-.cabecalho-imagem {
+.cabecalho__imagem {
     width: 120px;
     height: 48px;
 }
 
-.cabecalho-titulo {
+.cabecalho__titulo {
     display: flex;
-    gap: 32px;
+    gap: 20px;
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
-    color: darkblue;
 }
 
-
-.conteudo {
-    margin-bottom: 40px;
-    border-top: 0.5 solid;
-}
-
-.conteudo-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.conteudo-texto {
+.conteudo__input {
     display: flex;
     flex-direction: row;
-    gap: 32px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    color: #D8DFE8;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    margin-right: 10;
+
 }
 
-.conteudo-textarea-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.conteudo__input .input {
+    width: 400px;
+    height: 330px;
+
 }
 
-.conteudo-botoes  {
-    display: flex;
-    flex-direction: column;
-    background-color: #D8DFE8;
-    width: 680px;
-    height: 100px;
+#input__texto {
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: #082eb9;
+    background: transparent;
+    box-shadow: none;
     border: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: lowercase;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #082eb9;
 }

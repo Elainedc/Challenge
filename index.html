@@ -10,38 +10,52 @@
 <body>
     <header class="cabecalho"> 
         <a href="https://www.alura.com.br/">
-            <img class="cabecalho-imagem" src="assets/Frame 6.png" alt="logo da alura">
+            <img class="cabecalho__imagem" src="assets/Frame 6.png" alt="logo da alura">
         </a>       
-        <h1 class="cabecalho-titulo">Decodifique-se</h1>
+        <h1 class="cabecalho__titulo">Decodifique-se</h1>
         
     </header>
 
     <main class="conteudo">
-       <section class="conteudo-principal">
-            <form class="conteudo-texto">
-                <textarea class="conteudo-textarea-1" rows="20" cols="150" id="texto" placeholder="Digite seu texto aqui" class="container__textarea"></textarea>
-                <textarea class="conteudo-textarea-2" rows="20" cols="50" id="texto" placeholder="Nenhuma mensagem encontrada. Digite uma mensagem que deseja criptografar ou descriptografar." class="conteudo__textarea"></textarea>
-            </form>
-       </section>
-       <div>
-            <p>! Apenas letras minúsculas e sem acentos.</p>  
-       </div> 
+       <div class="conteudo__input">
+            <div class="input">
+                <textarea id="input__texto" placeholder="Digite seu texto"></textarea>
+                <p>! Apenas letras minúsculas e sem acentos.</p>
+            </div>            
+        </div>
+
+        <div id="output">
+            <img src="assets/High quality products 1 1.png" alt="pessoa procurando com a lupa">
+            <h2><strong>Nenhuma mensagem encontrada.</strong></h2><br>
+            <span>Digite um texto que você gostaria de criptografar ou descriptografar</span>
+        </div>
+
+
+        <div class="botoes">
+            <div class="conteudo__botoes">
+                <button class="botao__criptografar">Criptografar</button>
+                <button class="botao__descriptografar">Descriptografar</button>
+
+            </div>
+        </div>
+        
             
-       <section class="conteudo-botoes">
-            <button onclick="criptografarTexto()" class="conteudo-botoes-1">Criptografar</button>
-            <button onclick="descriptografarTexto()" class="conteudo-botoes-2">Descriptografar</button>
-       </section>
-    </main>
+    </main>   
     <footer class="rodape">
         <p>Desenvolvido por Elaine Dias Carvalho, aluna do programa ONE/Alura</p>
-        <a href="https://github.com/Elainedc">
-            <button>Github</button>
-        </a>
-        <a href="https://www.linkedin.com/in/elainedc/">
-            <button>LinkedIn</button>
-        </a>
-         
+        <div class="icons">
+            <a href="https://github.com/Elainedc"><ion-icon name="logo-github"></ion-icon>
+                <button>Github</button>
+            </a>
+            <a href="https://www.linkedin.com/in/elainedc/"><ion-icon name="logo-linkedin"></ion-icon>
+                <button>LinkedIn</button>
+            </a>
+        </div>
     </footer>
+
+    <script src="interacao/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
 
