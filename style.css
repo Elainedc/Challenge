@@ -29,8 +29,8 @@ body {
 }
 
 .cabecalho__imagem {
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 120px;
+    max-height: 48px;
     width: auto;
     height: auto;
 }
@@ -131,7 +131,7 @@ body {
 
 }
 
-.botaocopiar {
+.botao__copiar {
     background-color: var(--corprincipal);
     color: var(--corsecundaria);
     border: 2px solid var(--corquaternario);
