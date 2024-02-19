@@ -82,7 +82,8 @@ body {
     border-radius: 20px;
     width: 350px;
     height: 500px;
-    margin-right: 3%;
+    margin-right: 5%;
+    padding: 2%;
 }
 
 #output h2 {
