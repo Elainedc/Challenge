@@ -104,10 +104,11 @@ body {
 }
 
 .botao__criptografar {
+    background-color: var(--corsecundaria);
+    color: white;
     border: 2px solid var(--corsecundaria);
     border-radius: 10px;
     text-decoration: none;
-    color: darkblue;
     width: 300px;
     height: 57px;
     margin-left: 4%;
@@ -116,10 +117,11 @@ body {
 }
 
 .botao__descriptografar {
-    border: 2px solid var(--corsecundaria);
+    background-color: var(--corterciaria);
+    color: var(--corsecundaria);
+    border: 2px solid var(--corterciaria);
     border-radius: 10px;
     text-decoration: none;
-    color: darkblue;
     width: 300px;
     height: 57px;
     margin-left: 4%;
@@ -128,29 +130,38 @@ body {
 
 }
 
-.botao__copiar {
-    border: 2px solid var(--corsecundaria);
+.botaocopiar {
+    background-color: var(--corprincipal);
+    color: var(--corsecundaria);
+    border: 2px solid var(--corquaternario);
     border-radius: 10px;
     text-decoration: none;
-    color: darkblue;
     width: 300px;
     height: 57px;
-    margin-bottom: 10%;
-    margin-left: 30%;
+    margin-left: 4%;
     cursor: pointer;
     font-size: 15px;
-
-}
+  
+  }
 
 .botao__criptografar:hover {
-    border: var(--corsecundaria);
-    transition: 03s all;
+    border: var(--corquaternario);
+    background-color: var(--corquaternario);
+    color: var(--corsecundaria);
 }
 
 .botao__descriptografar:hover {
-    border: var(--corsecundaria);
-    transition: 03s all;
+    border: var(--corquaternario);
+    background-color: var(--corquaternario);
+    color: var(--corsecundaria);
 }
+
+.botaocopiar:hover {
+    border: var(--corquaternario);
+    background-color: var(--corquaternario);
+    color: var(--corsecundaria);
+  }
+  
 
 .rodape {
     display: flex;
@@ -159,21 +170,22 @@ body {
     justify-content: center;
     padding: 2%;
     margin-top: 15px;
-    background: var(--corprincipal);
-    color: var(--corsecundaria);
+    background: var(--corsecundaria);
+    color: var(--corprincipal);
 }
-
+  
 .aluna {
     font-size: 20px;
 }
-
+  
 .icons ion-icon {
     width: 25px;
     height: 25px;
-    color: var(--corsecundaria);
+    color: var(--corprincipal);
     transition: 02s all;
 }
-
+  
 .icons ion-icon:hover {
     color: var(--corterciaria);
 }
+  
