@@ -21,7 +21,7 @@
         <div class="conteudo__input">
             <div class="input">
                 <textarea id="input__texto" placeholder="Digite seu texto"></textarea>
-                <p>! Apenas letras minúsculas e sem acentos.</p>
+                <p><ion-icon name="alert-circle-outline"></ion-icon> Apenas letras minúsculas e sem acentos.</p>
             </div>            
         </div>
 
@@ -34,13 +34,13 @@
 
     <div class="botoes">
         <div class="conteudo__botoes">
-            <button class="botao__criptografar">Criptografar</button>
-            <button class="botao__descriptografar">Descriptografar</button>
+            <button onclick="criptografar()" class="botao__criptografar">Criptografar</button>
+            <button onclick="descriptografar()" class="botao__descriptografar">Descriptografar</button>
         </div>
     </div>
 
     <footer class="rodape">
-        <p class="aluna">Desenvolvido por Elaine Dias Carvalho, aluna do programa ONE/Alura.</p>
+        <p class="aluna">Desenvolvido por Elaine Dias Carvalho, aluna do programa ONE/Alura, Turma 6, 2024.</p>
         <div class="icons">
             <a href="https://github.com/Elainedc"><ion-icon name="logo-github"></ion-icon>
             </a>
@@ -51,13 +51,12 @@
         </div>
     </footer>
 
-    <script src="interacao/script.js"></script>
+    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
 
-    
     
 </body>
 </html>
