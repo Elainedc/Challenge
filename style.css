@@ -30,8 +30,10 @@ body {
 }
 
 .cabecalho__imagem {
-    width: 120px;
-    height: 48px;
+    max-width: 120px;
+    max-height: 48px;
+    width: auto;
+    height: auto;
 }
 
 .cabecalho__titulo {
@@ -40,16 +42,13 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 2.2rem;
 }
 
 
 .main__conteudo {
     display: flex;
-    gap: 80px;
     flex-wrap: nowrap;
     justify-content: space-between
-    
 }
 
 .conteudo__input {
@@ -60,7 +59,7 @@ body {
 
 }
 .conteudo__input .input{
-    width: 500px;
+    width: 620px;
     height: 280px;
 
 }
@@ -68,7 +67,7 @@ body {
 #input__texto {
     width: 380px;
     height: 600px;
-    font-size: 1.25rem;
+    font-size: 20px;
     color: var(--corsecundaria);
     background: transparent;
     box-shadow: none;
@@ -93,12 +92,12 @@ body {
 
 #output h2 {
     text-align: center;
-    font-size: 1.56rem;
+    font-size: 25px;
     color: var(--corsecundaria);
 }
 
 #output span {
-    font-size: 1rem;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -120,7 +119,7 @@ body {
     width: 400px;
     height: 57px;
     margin-left: 4%;
-    font-size: 1rem;
+    font-size: 20px;
 }
 
 .botao__criptografar {
@@ -133,7 +132,7 @@ body {
     height: 57px;
     margin-left: 4%;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 
 .botao__descriptografar {
@@ -146,7 +145,7 @@ body {
     height: 57px;
     margin-left: 4%;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 20px;
 
 }
 
@@ -160,7 +159,7 @@ body {
     height: 57px;
     margin-left: 25%;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 20px;
   
   }
 
@@ -181,7 +180,6 @@ body {
     background-color: var(--corquaternario);
     color: var(--corsecundaria);
   }
-
   
 
 .rodape {
@@ -196,7 +194,7 @@ body {
 }
   
 .aluna {
-    font-size: 1.25rem;
+    font-size: 20px;
 }
   
 .icons ion-icon {
@@ -292,3 +290,5 @@ body {
 
 
 }
+  
+  
