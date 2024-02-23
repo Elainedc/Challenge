@@ -18,6 +18,7 @@ body {
     font-size: 100%;
     background: var(--corprincipal);
     font-family: "Roboto", sans-serif;
+    
 }
 
 .cabecalho {
@@ -29,10 +30,8 @@ body {
 }
 
 .cabecalho__imagem {
-    max-width: 120px;
-    max-height: 48px;
-    width: auto;
-    height: auto;
+    width: 120px;
+    height: 48px;
 }
 
 .cabecalho__titulo {
@@ -41,25 +40,16 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 2.2rem;
 }
 
-.cabecalho__aviso {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 5px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    width: 400px;
-    height: 57px;
-    margin-left: 4%;
-    font-size: 20px;
-}
+
 .main__conteudo {
     display: flex;
+    gap: 80px;
     flex-wrap: nowrap;
     justify-content: space-between
+    
 }
 
 .conteudo__input {
@@ -70,7 +60,7 @@ body {
 
 }
 .conteudo__input .input{
-    width: 620px;
+    width: 500px;
     height: 280px;
 
 }
@@ -78,7 +68,7 @@ body {
 #input__texto {
     width: 380px;
     height: 600px;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--corsecundaria);
     background: transparent;
     box-shadow: none;
@@ -103,12 +93,12 @@ body {
 
 #output h2 {
     text-align: center;
-    font-size: 25px;
+    font-size: 1.56rem;
     color: var(--corsecundaria);
 }
 
 #output span {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -117,6 +107,20 @@ body {
     max-height: 300px;
     width: auto;
     height: auto;
+}
+
+.aviso {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 400px;
+    height: 57px;
+    margin-left: 4%;
+    font-size: 1rem;
 }
 
 .botao__criptografar {
@@ -129,7 +133,7 @@ body {
     height: 57px;
     margin-left: 4%;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .botao__descriptografar {
@@ -142,7 +146,7 @@ body {
     height: 57px;
     margin-left: 4%;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem;
 
 }
 
@@ -156,7 +160,7 @@ body {
     height: 57px;
     margin-left: 25%;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem;
   
   }
 
@@ -177,6 +181,7 @@ body {
     background-color: var(--corquaternario);
     color: var(--corsecundaria);
   }
+
   
 
 .rodape {
@@ -191,7 +196,7 @@ body {
 }
   
 .aluna {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
   
 .icons ion-icon {
@@ -204,4 +209,86 @@ body {
 .icons ion-icon:hover {
     color: var(--corterciaria);
 }
-  
+
+@media (max-width: 768px) {
+    
+    .cabecalho {
+        justify-content: center;
+    }
+    
+    .main__conteudo {
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        padding-left: 25%;
+    }
+
+    .aviso  {
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+        padding-right: 4%;
+        padding-top: 3%;
+    
+
+    }
+
+    .botoes {
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        padding-left: 28%;
+
+    }
+
+    .rodape {
+
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        padding-left: 2%;
+    }
+
+
+}
+
+@media (max-width: 425px) {
+    .cabecalho {
+        justify-content: flex-start;
+    }
+    
+    .main__conteudo {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: auto;
+        padding-left: 3%;
+    }
+
+    .aviso  {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: auto;
+        padding-right: 2%;
+        padding-top: 3%;
+    
+
+    }
+
+    .botoes {
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        padding-left: 10%;
+
+    }
+
+    .rodape {
+
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        padding-left: 2%;
+    }
+
+
+}

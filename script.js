@@ -1,7 +1,8 @@
 
-
 function criptografar() {
     let textInput = document.querySelector("#input__texto").value;
+    
+    
     let resultadoCriptografia = textInput.replace(/e/g, "enter")
                                     .replace(/i/g, "imes")
                                     .replace(/a/g, "ai")
