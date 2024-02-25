@@ -1,32 +1,34 @@
 
 function criptografar() {
-    let textInput = document.querySelector("#input__texto").value;
-    
-    
+    let textInput = document.querySelector("#input__texto").value.toLowerCase();
     let resultadoCriptografia = textInput.replace(/e/g, "enter")
                                     .replace(/i/g, "imes")
                                     .replace(/a/g, "ai")
                                     .replace(/o/g, "ober")
                                     .replace(/u/g, "ufat");
-
-    document.getElementById('output').innerHTML = '<textarea readonly id="input__texto">' + resultadoCriptografia + '</textarea>' + '<button class="botao__copiar" onclick="copiar()">Copiar</button>'
+    document.getElementById('output').innerHTML = resultadoCriptografia;
+    document.getElementById('Copiar').style.display = 'inline';
 }
 
 function descriptografar() {
-    let textInput = document.querySelector("#input__texto").value;
+    let textInput = document.querySelector("#input__texto").value.toLowerCase();
     let resultadoDescriptografia = textInput.replace(/enter/g, "e")
                                     .replace(/imes/g, "i")
                                     .replace(/ai/g, "a")
                                     .replace(/ober/g, "o")
                                     .replace(/ufat/g, "u");
-    document.getElementById('output').innerHTML = '<textarea readonly id="input__texto">' +  resultadoDescriptografia+ '</textarea>' + '<button class="botao__copiar" onclick="copiar()">Copiar</button>';
+    document.getElementById('output').innerHTML = resultadoDescriptografia;
+    document.getElementById('Copiar').style.display = 'inline';
 }
 
-function copiar() {
-    let textoCop = document.getElementById('input__texto');
-
-    textoCop.select();
-    document.execCommand('copy');
-    alert('O texto foi copiado!');
+function Copiar() {
+    let textcopiado = document.getElementById('output').innerText;
+    navigator.clipboard.writeText(textcopiado)
+            .then(() => {
+            document.getElementById('Copiar').innerText = 'Texto copiado com sucesso!';
+             })
+        .catch(err => {
+          document.getElementById('Copiar').innerText = 'Erro ao copiar texto:';
+            });
 }
 
